@@ -1,0 +1,33 @@
+GRID_WIDTH = 15
+GRID_HEIGHT = 15
+START_POS = (0, 0)
+GOAL_POS = (14, 14)
+OBSTACLES = [
+    (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8),
+    (5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7),
+    (7, 8), (7, 9), (7, 10), (8, 10), (9, 10), (10, 10),
+    (12, 4), (12, 5), (12, 6), (13, 6), (14, 6),
+    (6, 12), (7, 12), (8, 12), (9, 12),
+    (10, 14), (11, 14), (12, 14), (13, 14)
+]
+
+NUM_EPISODES = 1500
+MAX_STEPS_PER_EPISODE = 200
+
+# DQN параметры
+LEARNING_RATE = 5e-4
+DISCOUNT_FACTOR = 0.99
+EPSILON_START = 1.0
+EPSILON_END = 0.1
+EPSILON_DECAY = 0.997
+REPLAY_BUFFER_SIZE = 50000
+BATCH_SIZE = 128
+TARGET_UPDATE_FREQ = 50
+
+REWARD_GOAL = 100
+REWARD_COLLISION = -100
+REWARD_STEP = -1
+
+VISUALIZE_EVERY = 10
+
+VISION_RADIUS = 1
